@@ -1,0 +1,48 @@
+ID: BS001
+Category: Body Shape
+Title: Hourglass
+Content:
+People with an hourglass body shape usually look best in outfits that highlight the waist while maintaining the natural balance between the upper and lower body. Fitted tops, wrap dresses, belted jackets, tailored pieces, and high-waisted skirts or jeans are recommended because they enhance the body's natural proportions. Simple and well-fitted clothing creates a balanced and elegant appearance without adding unnecessary volume. Oversized, boxy, or shapeless clothing should generally be avoided, as they can hide the waist and reduce the natural silhouette. Clothing with excessive embellishments around the shoulders or hips may also disrupt the body's balanced proportions.
+Keywords:
+hourglass, fitted tops, wrap dresses, belted jackets, high-waisted skirts, high-waisted jeans, tailored clothing, defined waist, balanced proportions, oversized clothing
+—---------------------------------------------------------------------------------------------------------------------
+
+ID: BS002
+Category: Body Shape
+Title: Apple (Round)  
+Content:
+People with an apple (round) body shape usually look best in outfits that create a more defined waist and draw attention away from the midsection. Clothing with wrap designs, waist belts, or subtle waist details helps create a balanced silhouette. V-neck and scoop neck tops can elongate the upper body, while A-line dresses or skirts, straight-leg or wide-leg pants, and structured layers provide better overall balance. Soft, flowing fabrics and simple designs are recommended because they create a smooth appearance without adding extra volume. Tight-fitting clothing, boxy cuts, bulky fabrics, or excessive embellishments around the waist should generally be avoided, as they may emphasize the midsection and reduce the overall balance of the outfit.
+Keywords:
+apple body shape, round body shape, V-neck, scoop neck, wrap tops, waist belt, A-line dress, straight-leg pants, wide-leg pants, flowing fabrics, balanced silhouette
+—-----------------------------------------------------------------------------------------------------------------------
+ID: BS003
+Category: Body Shape
+Title: Pear (Triangle)
+Content:
+People with a pear (triangle) body shape usually look best in outfits that create balance between the upper and lower body by drawing attention to the shoulders and waist. Tops with interesting details, brighter colors, or structured designs help add visual emphasis to the upper body, while fitted or waist-defining styles enhance the natural silhouette. A-line skirts, wrap dresses, high-waisted bottoms, straight-leg or bootcut pants, and structured fabrics create a balanced appearance without adding extra volume to the hips. Darker-colored bottoms can also help create a more proportional look. Tight-fitting bottoms, bulky details around the hips, or clothing that adds unnecessary volume to the lower body should generally be avoided, as they may make the hips appear more prominent.
+Keywords:
+pear body shape, triangle body shape, balanced proportions, A-line skirt, wrap dress, high-waisted bottoms, bootcut pants, straight-leg pants, structured tops, dark bottoms, waist definition
+—--------------------------------------------------------------------------------------------------------------------
+ID: BS004
+Category: Body Shape
+Title: Straight (Rectangle)
+Content:
+People with a straight (rectangle) body shape usually look best in outfits that create the illusion of curves while defining the waist. Clothing with wrap styles, peplum details, waist belts, and fitted jackets helps add shape and create a more balanced silhouette. High-waisted skirts, wide-leg or flared pants, and A-line dresses are recommended because they add volume to the lower body and emphasize the waist. Layering with structured pieces and choosing textured fabrics or subtle patterns can also create more dimension. Boxy, shapeless, or overly loose clothing should generally be avoided, as it can hide the waist and make the body appear flatter and less defined.
+Keywords:
+rectangle body shape, straight body shape, defined waist, wrap tops, peplum tops, waist belt, high-waisted skirt, A-line dress, wide-leg pants, flared pants, structured layers
+—----------------------------------------------------------------------------------------------------------------
+ID: BS005
+Category: Body Shape
+Title: Diamond
+Content:
+People with a diamond body shape usually look best in outfits that draw attention to the shoulders and legs while creating a more balanced silhouette. Tops with V-neck or U-neck styles, shoulder details, or subtle embellishments help shift the focus upward, while dresses and skirts with simple cuts and flowing fabrics create a smooth appearance. Bootcut, wide-leg, or straight-leg pants are recommended because they balance the body's proportions and elongate the legs. Dark, simple bottoms with minimal embellishments help maintain a clean silhouette. Tight-fitting clothing around the midsection, bulky waist details, or heavily decorated bottoms should generally be avoided, as they may draw unnecessary attention to the body's widest area.
+Keywords:
+diamond body shape, V-neck, U-neck, shoulder details, flowing fabrics, bootcut pants, wide-leg pants, straight-leg pants, balanced silhouette, dark bottoms, minimal embellishments
+—-----------------------------------------------------------------------------------------------------------------
+ID: BS006
+Category: Body Shape
+Title: Athletic
+Content:
+People with an athletic body shape usually look best in outfits that soften broad shoulders, define the waist, and create a balanced silhouette. Wrap tops, scoop or V-neck styles, fitted tops, and waist-defining pieces help add shape while highlighting the body's natural proportions. Wide-leg pants, A-line skirts, wrap dresses, and flowy fabrics create more balance by adding gentle volume to the lower body. Structured jackets and cropped outerwear can also enhance waist definition without adding unnecessary bulk. Extremely boxy clothing, overly baggy outfits, or garments that add extra volume to the shoulders should generally be avoided, as they may make the upper body appear wider and reduce overall balance.
+Keywords:
+athletic body shape, V-neck, scoop neck, wrap top, fitted clothing, wide-leg pants, A-line skirt, wrap dress, structured jacket, balanced silhouette, waist definition

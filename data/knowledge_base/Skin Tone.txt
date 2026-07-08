@@ -1,0 +1,26 @@
+
+ID: ST001
+Category: Skin Tone
+Title: Fair Skin
+Content:
+People with fair skin tones usually look best in outfits with soft, cool, or pastel colors that complement their delicate complexion. Shades like pastel pink, lavender, soft blue, mint green, and heather grey are highly recommended because they bring out the natural radiance of light skin while maintaining a soft and balanced appearance. Muted jewel tones can also create a gentle, elegant contrast. Harsh neon colors, extremely bright yellows, and solid, heavy black clothing should generally be avoided, as they can wash out the skin tone, making the complexion appear pale, dull, or fatigued.
+Keywords:
+white skin, light complexion, pastel colors, soft blue, lavender, mint green, cool tones, elegant contrast, avoid neons, wash out
+—---------------------------------------------------------------------------------------------------------------------
+ID: ST002
+Category: Skin Tone
+Title: Medium (Olive) Skin
+Content:
+People with medium or olive skin tones usually look best in warm, rich, and earthy colors that enhance the natural golden or warm undertones of their complexion. Rich shades like olive green, mustard yellow, maroon, coral, warm cream, and deep teal are highly recommended because they add warmth and vibrancy to the overall appearance. Metallic gold also flatters this skin tone beautifully. Icy shades, stark silver, and washed-out pastel colors should generally be avoided, as they can contrast poorly with the skin's natural warmth, making the complexion appear less vibrant or muted.
+Keywords:
+medium skin, olive skin, warm undertone, earthy colors, olive green, mustard yellow, maroon, coral, rich tones, avoid icy shades
+
+—-----------------------------------------------------------------------------------------------------------------------
+
+ID: ST003
+Category: Skin Tone
+Title: Dark Skin
+Content:
+People with dark skin tones usually look best in outfits featuring bold, vibrant, and high-contrast colors that beautifully complement their deep complexion. Sharp shades like crisp white, royal blue, fuchsia, bright emerald green, and vivid yellow are highly recommended because they create a stunning, high-energy contrast that makes the skin glow. Warm metallic shades like bronze and gold also look exceptionally elegant. Muted greys, washed-out pastels, and muddy brown tones should generally be avoided, as they fail to provide enough contrast and can make the overall appearance look dull, faded, or blending too much with the clothes.
+Keywords:
+dark skin, black skin, deep complexion, vibrant colors, high contrast, crisp white, royal blue, fuchsia, emerald green, vivid yellow, avoid muted greys

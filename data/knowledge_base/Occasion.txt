@@ -1,0 +1,51 @@
+
+ID: OC001
+Category: Occasion
+Title: University / Office / School
+Content:
+According to standard academic dress codes for educational and workplace environments, attire should fall under the smart-casual or business-casual categories, balancing neatness with comfort. Recommended clothing includes tailored trousers, structured chinos, conservative blouses, midi skirts, and clean loafers or flats. Distressed denim, athletic sweatpants, over-the-top prints, and overly revealing tops must be avoided to maintain a respectful, focused, and professional environment.
+Keywords:
+university, college, campus, school, student, office, work, workplace, business casual, smart casual, professional clothing, tailored trousers
+—---------------------------------------------------------------------------------------------------------------------
+
+ID: OC002
+Category: Occasion
+Title: Wedding / Party 
+Content:
+Social and celebratory dress codes, such as cocktail, festive, or semi-formal wear, dictate clothing that is elegant and ornamented. Recommended outfits include evening gowns, cocktail dresses, tailored tuxedos, satin blazers, and high-quality dress shoes. Casual t-shirts, sports sneakers, heavy winter parkas, and basic loungewear should be avoided as they fail to meet the celebratory decorum and formal aesthetics of these special events.
+Keywords:
+wedding, marriage, wedding guest, party, birthday, celebration, cocktail, festive, elegant dress, event
+—-----------------------------------------------------------------------------------------------------------------------
+ID: OC003
+Category: Occasion
+Title: Casual
+Content:
+The casual dress code focuses entirely on functional comfort, personal expression, and relaxed utility for daily activities. Recommended apparel includes basic knit t-shirts, classic denim jeans, hoodies, casual sweaters, and supportive sneakers. Rigid formal suits, heavily embellished evening dresses, corporate neckties, and stiff garments are excluded from this category to ensure maximum ease of movement and a laid-back look.
+Keywords:
+casual dress code, everyday comfort, everyday comfort, denim jeans, sneakers, relaxed clothing, daily wear.
+—--------------------------------------------------------------------------------------------------------------------
+
+ID: OC004
+Category: Occasion
+Title: Formal / Interview
+Content:
+The business-formal dress code for corporate environments and job interviews is strictly designed to create a professional appearance, structure, and professionalism. Recommended clothing consists of dark-colored structured pantsuits, skirt suits, pressed button-down shirts, and closed-toe professional shoes. Casual sportswear, bright neon palettes, loud distracting patterns, and unpolished footwear must be completely avoided to guarantee a serious and professional first impression.
+Keywords:
+business formal, corporate suit,traditional workplace attire, sharp look, job interview, interview, business meeting, professional, office interview
+—----------------------------------------------------------------------------------------------------------------
+ID: OC005
+Category: Occasion
+Title: Graduation
+Content:
+Graduation attire falls under the celebratory semi-formal category, requiring a neat and presentable look that accommodates academic regalia (caps and gowns). Recommended outfits include lightweight knee-length dresses, tailored slacks with smart shirts, and stable, comfortable dress shoes. Simple accessories and lightweight fabrics also help create a neat and comfortable look throughout the ceremony. Extremely puffy sleeves, floor-length heavy velvet gowns, and unstable stilettos should be avoided to prevent physical discomfort and bulkiness under the graduation gown.
+Keywords:
+graduation, graduation ceremony, commencement, college graduation, university graduation
+—-----------------------------------------------------------------------------------------------------------------
+
+ID: OC006
+Category: Occasion
+Title: Funeral
+Content:
+Mourning attire and funeral dress codes strictly require showing maximum respect, solemnity, and humility through understated, conservative clothing. Recommended apparel is limited to solid dark colors, predominantly matte black, deep charcoal, or dark navy, with high necklines and long sleeves. Vivid bright colors, flashing sequins, glittery fabrics, and casual streetwear are strictly forbidden out of respect for the grieving environment.
+Keywords:
+funeral, mourning, memorial, burial, respectful clothing

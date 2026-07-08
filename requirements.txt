@@ -1,0 +1,16 @@
+
+
+streamlit # Frontend framework for building the interactive web chat interface
+
+langchain  # Core framework for organizing RAG components and pipeline orchestration
+
+langchain-community # Community extensions for LangChain, enabling external vector store integrations
+
+chromadb # Lightweight vector database used to store and retrieve document embeddings
+
+huggingface_hub  # Official client to securely access and invoke pre-trained models via Hugging Face APIs
+
+sentence-transformers # Framework used locally to generate dense vector embeddings from text chunks
+
+
+protobuf # Data serialization library required for secure backend communication and database stability

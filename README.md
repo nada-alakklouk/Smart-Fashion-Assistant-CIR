@@ -1,4 +1,4 @@
-# 🤖 Smart Fashion Assistant: Conversational Information Retrieval (CIR) System
+# 👗 Smart Fashion Assistant: Conversational Information Retrieval (CIR) System
 
 An intelligent, context-aware conversational fashion assistant powered by **Retrieval-Augmented Generation (RAG)**. The system leverages semantic search and memory-guided dialogue tracking to deliver personalized clothing and styling recommendations grounded in established fashion principles.
 

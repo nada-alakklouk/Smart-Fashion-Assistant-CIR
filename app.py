@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from langchain_chroma import Chroma
 from langchain_core.messages import AIMessage, HumanMessage
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from custom_embeddings import CustomEmbeddings
 from huggingface_hub import InferenceClient
 
 CHROMA_PATH = "chroma"
@@ -17,10 +17,8 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 # Definition of Token
-import os
-import streamlit as st
 
-HF_TOKEN = os.environ.get("HF_TOKEN") or st.secrets.get("HF_TOKEN")
+HF_TOKEN="add your tokrn from hugging face here"
 
 if not HF_TOKEN:
     st.error("Hugging Face Token is missing! Please set HF_TOKEN environment variable.")
@@ -29,13 +27,12 @@ if not HF_TOKEN:
 # 2. Bringing in the database and the live client
 @st.cache_resource
 def init_system():
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    embeddings = CustomEmbeddings()
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embeddings)
     retriever = db.as_retriever(search_kwargs={"k": 2})
     
-    client = InferenceClient(
-        token=os.environ["HUGGINGFACEHUB_API_TOKEN"]
-    )
+    # اجعلي السطر بهذا الشكل تماماً:
+    client = InferenceClient(model="Qwen/Qwen2.5-7B-Instruct", token=HF_TOKEN)
     return retriever, client
 
 try:
@@ -73,14 +70,30 @@ if user_query := st.chat_input("Let's design your look! Type your first fashion 
             {
                 "role": "system",
                 "content": (
-                    "You are an expert AI fashion stylist and a Proactive Conversational IR (CIR) assistant. "
-                    "Your task is to answer the user's questions in English based ONLY on the following retrieved context:\n"
-                    f"{context}\n\n"
-                    "Strict Rules:\n"
-                    "1. Rely strictly on the provided context. Do not hallucinate.\n"
-                    "2. If the answer is not in the context, say: 'Based on the available fashion data, I do not have this information.'\n"
-                    "3. [CRITICAL] To make the conversation highly interactive, ALWAYS end your response with ONE engaging follow-up or exploratory question. "
-                    "This question should guide the user to explore more styling details from the documents (e.g., asking about their preferred colors, specific events, or matching accessories related to their body shape)."
+                    "You are an expert AI fashion stylist and an advanced Proactive Conversational Information Retrieval (IR) assistant.\n"
+                    "Your system operates STRICTLY in English. Your goal is to guide the user conversationally until you collect their profile across 4 specific pillars, and then recommend an outfit based ONLY on the provided fashion data.\n\n"
+                    
+                    f"Retrieved Fashion Data Context:\n{context}\n\n"
+                    
+                    "CONVERSATIONAL STRATEGY & PILLARS:\n"
+                    "1. You must track exactly 4 pillars: Body Shape, Skin Tone, Occasion, and Weather/Season.\n"
+                    "2. [STRICT MEMORY RULE]: Actively scan the user's current and previous inputs. If the user has ALREADY mentioned a pillar (e.g., if they said 'I have a job interview', then Occasion = Formal/Interview), you are strictly FORBIDDEN from asking about it again.\n"
+                    "3. Identify only the REMAINING missing pillars. Acknowledge what the user said, and ask ONE natural follow-up question to discover only the information they haven't provided yet.\n"
+                    "4. Do NOT provide the final outfit recommendation list until all 4 pillars are collected.\n"
+                    "5. Once all 4 pillars are collected, provide a detailed, cohesive, and professional outfit recommendation based strictly on the retrieved context."
+                                        
+                    "CRITICAL TERMINOLOGY & TRANSLATION LAWS:\n"
+                    "- Always use proper fashion terminology. NEVER output corrupted terms or literal machine translations (e.g., use 'Hourglass shape', NEVER 'glass watch'; use 'Wavy hair' or 'Professional updo', NEVER 'wifi').\n\n"
+                    
+                    "STRICT KNOWLEDGE-BASE MATCHING RULES:\n"
+                    "When all 4 pillars are known, you must generate a highly polished, professional recommendation that strictly enforces the rules inside the retrieved data:\n"
+                    "- [Match Occasion]: If the occasion is 'Formal / Interview' (OC004), you must strictly FORBID denim/jeans, sneakers, t-shirts, and casual wear. Recommend structured pantsuits or skirt suits in deep, conservative, professional colors (like navy blue, dark charcoal, or classic black). Strictly FORBID bright neon palettes, loud distracting patterns, or highly vibrant bottoms (like fuchsia or emerald green pants) for interviews, as the database mandates avoiding them for a serious impression.\n"
+                    "- [Match Skin Tone with Occasion]: When matching colors for 'Dark Skin' (ST003) during a 'Formal / Interview', do NOT use fuchsia or vivid yellow for the main clothing. Instead, keep the high contrast by using a crisp white pressed button-down shirt/blouse (which perfectly complements dark skin and matches the interview code), paired with dark professional suits, and limit the elegant gold or bronze metallic tones strictly to simple accessories (like a watch or small earrings)."
+                    "- [Match Body Shape]: For 'Hourglass' (BS001), focus on fitted tops and tailored pieces that highlight the waist; avoid oversized, boxy, or shapeless clothing. For other shapes (BS002 to BS006), adapt strictly according to their corresponding database entry text.\n"
+                    "- [Match Weather/Season]: For Hot/Summer (SS002), recommend lightweight and breathable fabrics like cotton or linen, and avoid heavy solid blacks or dark charcoals. For Cold/Winter (SS001), recommend layered outfits, knitwear, and coats.\n"
+                    
+                    "OUTPUT FORMAT:\n"
+                    "Output a beautifully structured, highly professional response in clear, fluent English that shows the final profile breakdown followed by the targeted clothing suggestions."
                 )
             }
         ]
@@ -93,13 +106,12 @@ if user_query := st.chat_input("Let's design your look! Type your first fashion 
         messages.append({"role": "user", "content": user_query})
         
        # Calling the modern interface with the supported model directly from Hugging Face servers
-        response = client.chat.completions.create(
-            model="Qwen/Qwen2.5-7B-Instruct",
+        response = client.chat_completion(
             messages=messages,
-            max_tokens=512,
+            max_tokens=500,
             temperature=0.5
         )
-        
+
         response_text = response.choices[0].message.content
         
     with st.chat_message("AI"):
